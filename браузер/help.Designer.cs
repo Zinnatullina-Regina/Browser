@@ -37,7 +37,9 @@ namespace браузер
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // splitter1
@@ -103,11 +105,20 @@ namespace браузер
             this.textBox6.Size = new System.Drawing.Size(336, 22);
             this.textBox6.TabIndex = 8;
             // 
+            // pictureBox
+            // 
+            this.pictureBox.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(309, 348);
+            this.pictureBox.TabIndex = 9;
+            this.pictureBox.TabStop = false;
+            // 
             // help
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 348);
+            this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -118,7 +129,9 @@ namespace браузер
             this.Controls.Add(this.splitter1);
             this.Name = "help";
             this.Text = "help";
+            this.Load += new System.EventHandler(this.help_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +147,6 @@ namespace браузер
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }

@@ -12,9 +12,23 @@ namespace браузер
 {
     public partial class help : Form
     {
+        
         public help()
         {
             InitializeComponent();
+
+            Init();
+        }
+
+        private void help_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Init()
+        {
+            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox.Image = (Image)new Bitmap("Picture.JPG");
         }
     }
 }
